@@ -18,7 +18,7 @@ export async function verifyAuth(): Promise<AuthPayload | null> {
     }
 
     const verified = await jwtVerify(token, secret);
-    return verified.payload as AuthPayload;
+    return verified.payload as unknown as AuthPayload;
   } catch (error) {
     return null;
   }
