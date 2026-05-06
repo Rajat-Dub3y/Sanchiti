@@ -48,7 +48,7 @@ export const Testimonials = () => {
   }, [items.length]);
 
   return (
-    <section className="py-32 border-t border-border/40">
+    <section id="Testimonials" className="py-32 border-t border-border/40">
       <div className="container">
         <div className="flex items-end justify-between gap-8 mb-16 flex-wrap">
           <div>
@@ -176,9 +176,6 @@ export const Testimonials = () => {
               >
                 Leave your feedback here.
               </a>
-            </p>
-            <p className="text-xs text-muted-foreground/50 italic">
-              Names withheld for client privacy. Verified case studies available on request.
             </p>
           </div>
         </Reveal>
