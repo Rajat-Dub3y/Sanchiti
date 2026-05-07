@@ -52,7 +52,7 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <MagneticButton as="a" href="#contact" className="hidden sm:inline-flex">
-            Get Free Audit
+            Get Your Free Audit
             <span aria-hidden>→</span>
           </MagneticButton>
           <button
@@ -88,7 +88,7 @@ export const Navbar = () => {
             onClick={() => setOpen(false)}
             className="inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium"
           >
-            Get Free Audit →
+            Get Your Free Audit →
           </a>
         </div>
       </div>

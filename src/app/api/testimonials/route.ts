@@ -20,10 +20,9 @@ export async function GET() {
       testimonials.map((t) => ({
         id: t._id.toString(),
         name: t.name,
-        company: t.company,
         role: t.role,
         message: t.message,
-        rating: t.rating || 5, // <--- INSERT THIS LINE
+        rating: t.rating || 5,
       }))
     );
   } catch (err) {
@@ -36,19 +35,17 @@ export async function GET() {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, company, role, rating, message } = body;
+  const { name, role, rating, message } = body;
  
-    if (!name || !message || !rating) {
-      return NextResponse.json({ error: "All fields are required" }, { status: 400 });
-    }
+  if (!name || !message || !rating) {
+    return NextResponse.json({ error: "All fields are required" }, { status: 400 });
+  }
  
-    const client = await clientPromise;
-    const db = client.db(DB_NAME);
+  const client = await clientPromise;
+  const db = client.db(DB_NAME);
  
-    await db.collection(COLLECTION).insertOne({
-      name: name.trim(),
-      company: company.trim(),
-      role: role.trim(),
+  await db.collection(COLLECTION).insertOne({
+    name: name.trim(),
       message: message.trim(),
       status: "pending",
       rating: Number(rating) || 5,

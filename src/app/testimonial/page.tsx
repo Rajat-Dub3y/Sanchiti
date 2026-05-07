@@ -9,7 +9,7 @@ type Status = "idle" | "loading" | "success" | "error";
 
 export default function TestimonialsPage() {
   // 2. Add 'rating' to the form state
-  const [form, setForm] = useState({ name: "", company: "", role: "", message: "", rating: 5 });
+  const [form, setForm] = useState({ name: "", role: "", message: "", rating: 5 });
   const [status, setStatus] = useState<Status>("idle");
   const [hoveredRating, setHoveredRating] = useState(0);
 
@@ -28,7 +28,7 @@ export default function TestimonialsPage() {
 
       setStatus("success");
       // 3. Reset form including rating
-      setForm({ name: "", company: "", role: "", message: "", rating: 5 });
+      setForm({ name: "", role: "", message: "", rating: 5 });
     } catch {
       setStatus("error");
     }
@@ -73,10 +73,9 @@ export default function TestimonialsPage() {
               onSubmit={onSubmit}
               className="mt-16 rounded-3xl border border-border/60 bg-surface/50 backdrop-blur p-8 md:p-12 space-y-8"
             >
-              {/* Input mapping for Name, Company, Role ... */}
+              {/* Input mapping for Name and Role only */}
               {[
                 { k: "name", l: "Your Name", t: "text", ph: "Arjun Sharma", req: true },
-                { k: "company", l: "Company / Business Name", t: "text", ph: "Your company", req: false },
                 { k: "role", l: "Your Role", t: "text", ph: "Managing Director", req: false },
               ].map((f) => (
                 <label key={f.k} className="block">

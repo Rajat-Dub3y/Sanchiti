@@ -49,8 +49,7 @@ export const Hero = () => {
 
         <Reveal delay={600}>
           <p className="mt-10 max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Sanchiti Digital transforms established Indian businesses into powerful digital brands —
-            website, social media, video, and beyond. All under one roof.
+            Sanchiti Digital is opening five client partnerships this quarter. Our team of expert AI consultants, software engineers, brand strategists, creative directors, video producers, and digital engagement specialists work exclusively with businesses ready to lead — not follow. We only commit when we know we can deliver something exceptional. Due to our limited availability, only five partnerships will be accepted this quarter. If you are serious about becoming the digital leader in your industry — we would love to hear from you.
           </p>
         </Reveal>
 

@@ -7,10 +7,9 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 interface Testimonial {
   id: string;
   name: string;
-  company: string;
   role: string;
   message: string;
-  rating: number; // Added rating to interface
+  rating: number;
 }
 
 export const Testimonials = () => {
@@ -148,9 +147,7 @@ export const Testimonials = () => {
                     </div>
                     <div>
                       <div className="font-medium text-foreground">{item.name}</div>
-                      <div className="text-sm text-muted-foreground">
-                        {item.role}{item.company ? `, ${item.company}` : ""}
-                      </div>
+                      <div className="text-sm text-muted-foreground">{item.role}</div>
                     </div>
                   </footer>
                 </div>
