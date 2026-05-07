@@ -148,6 +148,7 @@ export function EnquiriesPanel() {
               <div className="mt-6">
                 <a
                   href={`mailto:${selectedEnquiry.email}`}
+                  target="_blank"
                   className="inline-block px-4 py-2 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
                 >
                   Reply via Email

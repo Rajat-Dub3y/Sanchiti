@@ -86,6 +86,7 @@ export const Contact = () => {
                 </div>
                 <a
                   href="mailto:connect@sanchitidigital.in"
+                  target="_blank"
                   className="link-underline text-foreground"
                 >
                   connect@sanchitidigital.in
@@ -189,6 +190,7 @@ export const Contact = () => {
                   Or reach us at{" "}
                   <a
                     href="mailto:connect@sanchitidigital.in"
+                    target="_blank"
                     className="text-foreground link-underline"
                   >
                     connect@sanchitidigital.in

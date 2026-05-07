@@ -30,7 +30,7 @@ export const Footer = () => {
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">Connect</div>
             <ul className="space-y-2 text-sm text-foreground/80">
-              <li><a href="https://www.instagram.com/sanchiti.in/" target="_blank" rel="noopener noreferrer" className="link-underline">Instagram</a></li>
+              <li><a href="https://www.instagram.com/sanchitidigital/" target="_blank" rel="noopener noreferrer" className="link-underline">Instagram</a></li>
               <li><a href="https://wa.me/917757977823" target="_blank" rel="noopener noreferrer"  className="link-underline">WhatsApp</a></li>
               <li><a href="mailto:connect@sanchitidigital.in"  target="_blank" className="link-underline">connect@sanchitidigital.in</a></li>
             </ul>
