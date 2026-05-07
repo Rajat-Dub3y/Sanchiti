@@ -22,8 +22,9 @@ export const Navbar = () => {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 [transition-timing-function:cubic-bezier(0.19,1,0.22,1)] ${
-        scrolled
-          ? "bg-background/70 backdrop-blur-xl border-b border-border/50 py-3"
+        // Added 'open' check here
+        scrolled || open
+          ? "bg-background/90 backdrop-blur-xl border-b border-border/50 py-3"
           : "bg-transparent py-6"
       }`}
     >
